@@ -188,6 +188,7 @@ export default function App() {
   const pct = results.length ? Math.round((100 * correctN) / results.length) : 0
   const misses = results.filter((r) => !r.correct)
   const canStart = mapData && pool.length > 0
+  const done = Object.fromEntries(results.map((r) => [r.point.id, r.correct]))
 
   return (
     <div className="app">
@@ -399,6 +400,7 @@ export default function App() {
           tolerance={tolBase}
           hiddenMode={mode === 'hidden'}
           locked={phase === 'preview' || !!answer}
+          done={done}
           onPick={onPick}
         />
       )}

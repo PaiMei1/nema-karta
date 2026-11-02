@@ -1,6 +1,10 @@
 import { memo, useEffect, useRef, useState } from 'react'
 import { W, H } from './maps.js'
 
+// Boje prošlih tačaka (različite od plave, zelene, crvene, reka i granica)
+const DONE_OK = '#1f2937'
+const DONE_BAD = '#f97316'
+
 const clampT = (t) => ({
   k: t.k,
   x: Math.min(0, Math.max(W * (1 - t.k), t.x)),
@@ -57,6 +61,7 @@ export default function MapView({
   tolerance,
   hiddenMode,
   locked,
+  done = {},
   onPick,
 }) {
   const svgRef = useRef(null)
@@ -131,6 +136,12 @@ export default function MapView({
   const r = 5 / t.k
   const sw = 1.5 / t.k
 
+  const pointFill = (p) => {
+    if (answer && p.id === answer.pickedId && !answer.correct) return '#dc2626'
+    if (p.id in done) return done[p.id] ? DONE_OK : DONE_BAD
+    return '#2563eb'
+  }
+
   return (
     <div className="mapwrap">
       <svg
@@ -172,14 +183,7 @@ export default function MapView({
           {showPoints &&
             points.map((p) => (
               <g key={p.id}>
-                <circle
-                  cx={p.x}
-                  cy={p.y}
-                  r={r}
-                  fill={answer && p.id === answer.pickedId && !answer.correct ? '#dc2626' : '#2563eb'}
-                  stroke="#fff"
-                  strokeWidth={sw}
-                />
+                <circle cx={p.x} cy={p.y} r={r} fill={pointFill(p)} stroke="#fff" strokeWidth={sw} />
                 {labels && (
                   <text
                     x={p.x + 7 / t.k}
@@ -226,6 +230,14 @@ export default function MapView({
           )}
         </g>
       </svg>
+
+      {showPoints && !labels && (
+        <div className="legend">
+          <span><i style={{ background: '#2563eb' }} />preostalo</span>
+          <span><i style={{ background: DONE_OK }} />tačno</span>
+          <span><i style={{ background: DONE_BAD }} />netačno</span>
+        </div>
+      )}
 
       <div className="zoom">
         <button onClick={() => zoomAt(W / 2, H / 2, 1.5)}>+</button>
