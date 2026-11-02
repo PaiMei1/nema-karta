@@ -1,0 +1,66 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #1c1c1e;
+}
+.app { max-width: 1100px; margin: 0 auto; padding: 16px; }
+h1 { margin: 0 0 12px; font-size: 22px; }
+.panel { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.12); display: flex; flex-direction: column; gap: 14px; }
+.row { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: #444; }
+label.check { flex-direction: row; align-items: center; gap: 6px; font-size: 14px; color: #1c1c1e; }
+select, input[type="number"] { padding: 7px 9px; font-size: 14px; border: 1px solid #bbb; border-radius: 6px; min-width: 160px; }
+button, .btn {
+  padding: 8px 14px; font-size: 14px; border: 1px solid #b5b5b5; border-radius: 6px;
+  background: #fff; cursor: pointer; flex-direction: row; color: #1c1c1e;
+}
+button:hover:not(:disabled), .btn:hover { background: #eef0f3; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+button.primary:hover:not(:disabled) { background: #1d4fc4; }
+.info { font-size: 13px; color: #555; }
+.error { background: #fde8e8; color: #9b1c1c; padding: 10px 12px; border-radius: 8px; margin-bottom: 12px; }
+.bar { display: flex; align-items: center; gap: 16px; background: #fff; padding: 10px 14px; border-radius: 10px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.bar .q { font-size: 20px; flex: 1; }
+.bar .meta { color: #555; font-size: 14px; }
+.fb { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; border-radius: 10px; margin-bottom: 10px; font-weight: 600; }
+.fb.ok { background: #dcfce7; color: #166534; }
+.fb.bad { background: #fee2e2; color: #991b1b; }
+.mapwrap { position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.2); user-select: none; }
+.mapwrap svg { display: block; }
+.zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; }
+.zoom button { width: 34px; height: 34px; padding: 0; font-size: 18px; }
+.result { align-items: center; text-align: center; }
+.result .big { font-size: 64px; font-weight: 700; color: #2563eb; }
+.result ul { margin: 0; padding-left: 18px; text-align: left; columns: 2; }
+textarea, input[type="text"] { padding: 8px 10px; font-size: 14px; border: 1px solid #bbb; border-radius: 6px; font-family: inherit; width: 100%; }
+button.link { border: none; background: none; color: #555; text-decoration: underline; margin-left: auto; }
+.modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 50; }
+.modal { background: #fff; border-radius: 12px; padding: 20px; width: 100%; max-width: 460px; display: flex; flex-direction: column; gap: 14px; max-height: 90vh; overflow: auto; }
+.modal h2 { margin: 0; font-size: 18px; }
+.modal select { width: 100%; }
+button.danger { background: #dc2626; border-color: #dc2626; color: #fff; }
+button.danger:hover:not(:disabled) { background: #b91c1c; }
+.note { font-size: 13px; color: #7a5a00; background: #fff6d6; border-radius: 8px; padding: 8px 10px; }
+.fbtext { display: flex; flex-direction: column; gap: 2px; }
+.fbtext small { font-weight: 400; font-size: 12px; opacity: .85; }
+.modal label { min-width: 0; }
+.modal input[type="text"], .modal textarea, .modal select { min-width: 0; }
+
+@media (max-width: 640px) {
+  .modal-bg { align-items: flex-end; padding: 0; }
+  .modal {
+    max-width: none;
+    border-radius: 16px 16px 0 0;
+    max-height: 92vh;
+    padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
+  }
+  .modal select, .modal input[type="text"], .modal textarea { font-size: 16px; min-height: 44px; }
+  .modal textarea { min-height: 110px; }
+  .modal .row button { flex: 1; min-height: 46px; }
+  .bar { flex-wrap: wrap; gap: 8px; }
+  .bar .q { flex: 1 1 100%; }
+  .fb { flex-wrap: wrap; }
+}
