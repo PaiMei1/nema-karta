@@ -1,6 +1,6 @@
 toponim,lat,lon,mapa
 Srem,45.0000,19.8000,srbija
-Banat,45.4000,20.6000,srbija
+Banat,45.3500,20.6000,srbija
 Bačka,45.5000,19.6000,srbija
 Fruška gora,45.1519,19.7133,srbija
 Vršačke planine,45.1372,21.4122,srbija
@@ -45,15 +45,15 @@ Pasjača,43.1650,21.6219,srbija
 Jastrebac,43.3919,21.4492,srbija
 Juhor,43.8122,21.2642,srbija
 Crni vrh,44.0089,21.1114,srbija
-Azanjski vis,,,srbija
+Azanjski vis,44.4333,21.0080,srbija
 Kopaonik,43.2681,20.8264,srbija
 Stolovi,43.6089,20.6111,srbija
 Goč,43.5364,20.8456,srbija
 Željin,43.4789,20.8050,srbija
 Rogozna,43.0144,20.5800,srbija
-Čičevica,,,srbija
-Skopska Crna gora,,,srbija
-Crnoljeva,,,srbija
+Čičevica,43.1500,21.0500,srbija
+Skopska Crna gora,42.1500,21.4500,srbija
+Crnoljeva,42.4542,20.8808,srbija
 Povlen,44.1303,19.7419,srbija
 Maljen,44.0961,19.9975,srbija
 Suvobor,44.1369,20.2214,srbija
@@ -87,7 +87,7 @@ Prokletije,42.5336,20.1444,srbija
 Hajla,42.7733,20.2725,srbija
 Žljeb,42.7700,20.2533,srbija
 Mokra gora,42.8317,20.3675,srbija
-Mokra planina,,,srbija
+Mokra planina,42.8200,20.3500,srbija
 Bogićevica,42.6142,20.1017,srbija
 Šar-planina,42.0800,20.9500,srbija
 Paštrik,42.2125,20.5300,srbija
@@ -106,23 +106,23 @@ Beljanica,44.1114,21.6997,srbija
 Rtanj,43.7761,21.8933,srbija
 Tupižnica,43.7031,22.1517,srbija
 Timočka krajina,43.9000,22.2500,srbija
-Zvižd,,,srbija
-Crna reka,,,srbija
+Zvižd,44.5316,21.5946,srbija
+Crna reka,44.1685,21.9023,srbija
 Ozren,43.5839,21.8447,srbija
 Devica,43.5939,21.9442,srbija
 Tresibaba,43.4361,22.3558,srbija
 Suva planina,43.1825,22.1711,srbija
 Stara planina,43.3950,22.6825,srbija
 Svrljiške planine,43.3539,22.1644,srbija
-Odorovsko kraško polje,,,srbija
-Ključ,,,srbija
+Odorovsko kraško polje,43.0800,22.6800,srbija
+Ključ,44.2297,20.0510,srbija
 Negotinska krajina,44.2300,22.5300,srbija
 Dunav,45.2540,19.8500,srbija
 Sava,44.8233,20.4500,srbija
 Tisa,45.1450,20.2800,srbija
 Tamiš,44.8700,20.6500,srbija
 Begej,45.3800,20.3900,srbija
-Čik,,,srbija
+Čik,45.8284,19.8234,srbija
 Nera,44.8100,21.3667,srbija
 Drina,44.5300,19.2000,srbija
 Jadar,44.6480,19.2550,srbija
@@ -130,15 +130,15 @@ Uvac,43.3494,19.9703,srbija
 Lim,43.5900,19.5200,srbija
 Kolubara,44.6600,20.1500,srbija
 Tamnava,44.4500,20.0700,srbija
-Peštan,,,srbija
+Peštan,44.3778,20.3984,srbija
 Ljig,44.2200,20.2300,srbija
 Velika Morava,44.7117,21.0347,srbija
 Jasenica,44.3700,20.9500,srbija
 Lepenica,44.0167,20.9167,srbija
-Lugomir,,,srbija
-Belica,,,srbija
+Lugomir,43.9428,21.2719,srbija
+Belica,43.9433,21.1232,srbija
 Resava,44.0900,21.4400,srbija
-Crnica,,,srbija
+Crnica,43.8907,21.4901,srbija
 Zapadna Morava,43.6992,21.4050,srbija
 Skrapež,43.8500,20.0300,srbija
 Đetinja,43.8600,19.8500,srbija
@@ -152,21 +152,21 @@ Južna Morava,43.6992,21.4050,srbija
 Sokobanjska Moravica,43.6400,21.8700,srbija
 Nišava,43.3200,21.9000,srbija
 Jerma,43.0667,22.6853,srbija
-Visočica,,,srbija
-Vlasina,,,srbija
-Vrla,,,srbija
+Visočica,43.1564,22.8329,srbija
+Vlasina,43.5916,21.8873,srbija
+Vrla,42.6920,22.1723,srbija
 Veternica,43.0100,21.9500,srbija
 Jablanica,42.8200,21.5800,srbija
-Pusta reka,,,srbija
+Pusta reka,43.0175,22.2188,srbija
 Toplica,43.2300,21.5900,srbija
 Binačka Morava,42.4600,21.4700,srbija
 Mlava,44.3700,21.4200,srbija
 Pek,44.7600,21.5100,srbija
-Porečka reka,,,srbija
+Porečka reka,44.3727,22.1733,srbija
 Timok,44.2136,22.6703,srbija
 Crni Timok,43.9200,22.2978,srbija
 Beli Timok,43.9200,22.2978,srbija
-Trgoviški Timok,,,srbija
+Trgoviški Timok,43.4684,22.3526,srbija
 Svrljiški Timok,43.4200,22.1000,srbija
 Sitnica,42.8900,20.8700,srbija
 Lab,42.9100,21.1900,srbija
@@ -174,19 +174,19 @@ Beli Drim,42.4000,20.6500,srbija
 Pećka Bistrica,42.6600,20.2900,srbija
 Dečanska Bistrica,42.5400,20.2800,srbija
 Klina,42.6200,20.5700,srbija
-Miruša,,,srbija
-Topluga,,,srbija
+Miruša,42.4968,20.7142,srbija
+Topluga,42.3421,20.7527,srbija
 Erenik,42.3800,20.4300,srbija
 Prizrenska Bistrica,42.2100,20.7400,srbija
 Nerodimka,42.3700,21.1500,srbija
 Lepenac,42.2300,21.2500,srbija
 Pčinja,42.3500,22.1000,srbija
-Dragovištica,,,srbija
+Dragovištica,42.4445,22.5072,srbija
 Palićko jezero,46.1000,19.7700,srbija
 Obedska Bara,44.7167,20.0000,srbija
 Rusanda,45.4833,20.3167,srbija
 Carska bara,45.3500,20.4000,srbija
-Zavojsko jezero,,,srbija
+Zavojsko jezero,43.2396,22.6726,srbija
 Đerdapsko jezero,44.4600,22.1500,srbija
 Perućac,43.9500,19.4000,srbija
 Zvorničko jezero,44.3800,19.1200,srbija
