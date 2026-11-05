@@ -191,7 +191,7 @@ export default function App() {
   const done = Object.fromEntries(results.map((r) => [r.point.id, r.correct]))
 
   return (
-    <div className="app">
+    <div className={'app phase-' + phase}>
       <h1>Nema karta</h1>
 
       {error && <div className="error">{error}</div>}
@@ -346,7 +346,7 @@ export default function App() {
       )}
 
       {phase === 'play' && target && (
-        <>
+        <div className="topstack">
           <div className="bar">
             <div className="q">
               Pronađi: <b>{target.name}</b>
@@ -383,7 +383,11 @@ export default function App() {
               </button>
             </div>
           )}
-        </>
+        </div>
+      )}
+
+      {(phase === 'preview' || phase === 'play') && (
+        <div className="note rotate-hint">Za bolji prikaz okreni telefon u horizontalni položaj.</div>
       )}
 
       {(phase === 'preview' || phase === 'play') && mapData && (
